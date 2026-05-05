@@ -1,0 +1,25 @@
+{
+  "name": "isometric-nce",
+  "version": "1.0.0",
+  "description": "The goal of this project is to create a lightweight 2.5D game that simulates Nepal College of Engineering and helps new students understand the campus layout.",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumoondev/Isometric-NCE.git"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sumoondev/Isometric-NCE/issues"
+  },
+  "homepage": "https://github.com/sumoondev/Isometric-NCE#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "three": "^0.184.0"
+  }
+}
