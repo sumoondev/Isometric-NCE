@@ -2,7 +2,7 @@
 
 ### Phase 0 
 - **Reference Gathering**
-- [ ] Sketch a rough top-down layout of the campus
+- [x] Sketch a rough top-down layout of the campus
 - [ ] Label all zones: Main Gate, Academic Block, Labs, Canteen, Field, Parking, Admin, Garden
 
 ### Phase 1 
