@@ -3,12 +3,12 @@
 ### Phase 0 
 - **Reference Gathering**
 - [x] Sketch a rough top-down layout of the campus
-- [ ] Label all zones: Main Gate, Academic Block, Labs, Canteen, Field, Parking, Admin, Garden
+- [x] Label all zones: Main Gate, Academic Block, Labs, Canteen, Field, Parking, Admin, Garden
 
 ### Phase 1 
 - **Map planning on paper**
-- [ ] Draw the full campus grid on graph paper with proper scaling
-- [ ] Assign tile types using this legend
+- [x] Draw the full campus grid on graph paper with proper scaling
+- [x] Assign tile types using this legend
 - [ ] Translate paper grid into a 2D JavaScript array
 
 ### Phase 2
