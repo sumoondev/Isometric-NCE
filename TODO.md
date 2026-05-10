@@ -9,9 +9,9 @@
 - **Map planning on paper**
 - [x] Draw the full campus grid on graph paper with proper scaling
 - [x] Assign tile types using this legend
-- [ ] Translate paper grid into a 2D JavaScript array
+- [x] campusMap.js - Translate paper grid into a 2D JavaScript array
 
-### Phase 2
+### Phase 2 
 - **Get a walkable flat world before any visuals or models**
 - [ ] Renderer.js — set up WebGLRenderer, size, pixel ratio capped at 2x, shadow map enabled
 - [ ] Camera.js — orthographic camera, position at (20, 20, 20), looking at origin
@@ -39,7 +39,7 @@
 - [ ] Model walls, gate, props, canteen, labs, admin, academic block
 - [ ] Keep poly count low, textures baked
 - [ ] Export .glb with DRACO
-- [ ] Replace grey-box with models
+- [ ] Replace grey-box with models<br>
 *Try to keep assets below 15MB*
 
 ### Phase 6
