@@ -1,5 +1,6 @@
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import Stats from 'three/examples/jsm/libs/stats.module.js';
 
 const renderer = new THREE.WebGLRenderer();
 
@@ -17,6 +18,9 @@ const camera = new THREE.PerspectiveCamera(
 );
 
 const orbit = new OrbitControls(camera, renderer.domElement);
+
+const stats = new Stats();
+document.body.appendChild(stats.dom);
 
 const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
@@ -38,6 +42,7 @@ scene.add(gridHelper);
 
 function animate() {
     renderer.render(scene,camera);
+    stats.update();
 }
 
 renderer.setAnimationLoop(animate);
