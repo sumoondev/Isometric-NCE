@@ -13,7 +13,7 @@
 
 ### Phase 2 
 - **Get a walkable flat world before any visuals or models**
-- [ ] Renderer.js — set up WebGLRenderer, size, pixel ratio capped at 2x, shadow map enabled
+- [x] Renderer.js — set up WebGLRenderer, size, pixel ratio capped at 2x, shadow map enabled
 - [ ] Camera.js — orthographic camera, position at (20, 20, 20), looking at origin
 - [ ] TileMap.js — read campusMap.js array, place flat BoxGeometry tiles with color per type
 - [ ] InputManager.js — capture WASD and Arrow key state

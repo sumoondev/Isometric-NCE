@@ -1,14 +1,13 @@
-import { setupScene }    from './scene/Renderer.js';
-import { buildWorld }    from './world/TileMap.js';
-import { createPlayer }  from './entities/Player.js';
+import { createRenderer } from './scene/Renderer.js';
+import Stats from 'three/examples/jsm/libs/stats.module.js';
 
-const { scene, camera, renderer } = setupScene();
-buildWorld(scene);
-const player = createPlayer(scene);
+const { renderer, onResize } = createRenderer();
+const stats = new Stats();
+
+document.body.appendChild(stats.dom);
 
 function loop() {
     requestAnimationFrame(loop);
-    player.update();
-    renderer.render(scene, camera);
+    stats.update();
 }
 loop();
