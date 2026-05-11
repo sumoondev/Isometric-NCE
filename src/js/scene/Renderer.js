@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { OrbitControls, OrbitControls, ThreeMFLoader } from 'three/examples/jsm/Addons.js';
+import { OrbitControls, ThreeMFLoader } from 'three/examples/jsm/Addons.js';
 
 export function createRenderer() {
     const pixelRatio = Math.min(window.devicePixelRatio, 2);    // cap pixel ratio to 2x
@@ -49,6 +49,16 @@ export function createRenderer() {
 
     function onResize(cb) {
         resizeCallbacks.push(cb);
+    }
+
+    // debugging purpose
+    if (import.meta.env?.DEV) {
+        console.log('[Renderer] Initialised', {
+        antialias:  useAntialias,
+        pixelRatio,
+        shadowMap:  'PCFSoft 1024px',
+        toneMapping: 'ACESFilmic',
+        });
     }
 
     return { renderer, onResize };
