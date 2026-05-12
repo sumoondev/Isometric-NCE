@@ -14,12 +14,12 @@
 ### Phase 2 
 - **Get a walkable flat world before any visuals or models**
 - [x] Renderer.js — set up WebGLRenderer, size, pixel ratio capped at 2x, shadow map enabled
-- [ ] Camera.js — orthographic camera, position at (20, 20, 20), looking at origin
-- [ ] TileMap.js — read campusMap.js array, place flat BoxGeometry tiles with color per type
-- [ ] InputManager.js — capture WASD and Arrow key state
+- [x] Camera.js — orthographic camera, position at (20, 20, 20), looking at origin
+- [x] TileMap.js — read campusMap.js array, place flat BoxGeometry tiles with color per type
+- [x] InputManager.js — capture WASD and Arrow key state
 - [ ] Player.js — capsule mesh, isometric WASD movement
-- [ ] Camera follows player with smooth lerp
-- [ ] Lighting.js — basic directional sun + ambient light
+- [x] Camera follows player with smooth lerp
+- [x] Lighting.js — basic directional sun + ambient light
 
 ### Phase 3
 - **Grey-box building**
