@@ -52,6 +52,7 @@ import { createLighting }      from './scene/Lighting.js';
 import { buildTileMap }        from './world/TileMap.js';
 import { createInputManager }  from './systems/InputManager.js';
 import { createPlayer }        from './entities/Player.js';
+import Stats from 'three/examples/jsm/libs/stats.module.js';
 
 // ── 1. Loading screen ─────────────────────────────────────
 // Shown while Three.js initialises and the tile map builds.
@@ -103,6 +104,11 @@ const clock = new THREE.Clock();
 // ── 10. Render loop ───────────────────────────────────────
 let firstFrame = true;
 
+
+const stats = new Stats();
+
+document.body.appendChild(stats.dom);
+
 function loop() {
   requestAnimationFrame(loop);
 
@@ -121,6 +127,8 @@ function loop() {
 
   // Render the frame
   renderer.render(scene, camera);
+
+  stats.update();
 
   // Remove loading screen on the very first rendered frame
   if (firstFrame) {
