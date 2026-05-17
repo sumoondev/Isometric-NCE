@@ -17,7 +17,7 @@
 - [x] Camera.js — orthographic camera, position at (20, 20, 20), looking at origin
 - [x] TileMap.js — read campusMap.js array, place flat BoxGeometry tiles with color per type
 - [x] InputManager.js — capture WASD and Arrow key state
-- [ ] Player.js — capsule mesh, isometric WASD movement
+- [x] Player.js — capsule mesh, isometric WASD movement
 - [x] Camera follows player with smooth lerp
 - [x] Lighting.js — basic directional sun + ambient light
 
